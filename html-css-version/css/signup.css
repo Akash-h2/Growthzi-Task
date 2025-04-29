@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+  }
+  
+  .signup-page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .signup-page {
+      flex-direction: row;
+    }
+  }
+  
+  .left-section {
+    flex: 1;
+    background-color: black;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-section {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .right-section {
+      display: block;
+      flex: 1;
+    }
+  
+    .right-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .logo-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+  
+  .logo-box h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .form-box {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  
+  .form-box h2 {
+    font-size: 2rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-box p {
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: darkorange;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #555;
+  }
+  
+  .divider span {
+    margin: 0 1rem;
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-login button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-login button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  
+  
+  .login-link a {
+    color: orange;
+    border: 1px solid orange;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    color: white;
+    background-color: orange;
+  }
+  
+  .modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modal-content h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-content p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .otp-inputs input {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+  }
+  
+  .resend button {
+    background: none;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: darkorange;
+  }
+  

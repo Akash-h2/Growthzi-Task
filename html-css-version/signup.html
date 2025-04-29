@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup - FitSphere</title>
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body>
+
+  <div class="signup-page">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="logo-box">
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /></a>
+        <h1>Fitsphere</h1>
+      </div>
+
+      <div class="form-box">
+        <h2>Create an Account</h2>
+        <p>Enter your personal details to create your account</p>
+
+        <form id="signupForm">
+          <input type="text" placeholder="Username" required />
+          <input type="text" placeholder="Mobile number" required />
+          <button type="submit">Generate OTP</button>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <div class="social-login">
+          <button class="google">
+            <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google" />
+            Google
+          </button>
+          <button class="facebook">
+            <img src="https://static.vecteezy.com/system/resources/previews/031/737/232/non_2x/facebook-icons-facebook-logo-facebook-flat-icons-free-png.png" alt="Facebook" />
+            Facebook
+          </button>
+        </div>
+
+        <p class="login-link">
+          Already have an account?
+          <a href="/login">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <img src="images/gym.png" alt="Gym Image" />
+    </div>
+
+    <!-- OTP Modal -->
+    <div id="otpModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Just One Step Away!</h3>
+        <p>Enter the OTP to verify your account</p>
+        <div class="otp-inputs">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div>
+        <p class="resend">Didn't get the code? <button>Resend code</button></p>
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("signupForm");
+    const modal = document.getElementById("otpModal");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      modal.classList.remove("hidden");
+    });
+  </script>
+
+</body>
+</html>

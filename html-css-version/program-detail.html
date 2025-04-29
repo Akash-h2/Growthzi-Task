@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workout Program Details</title>
+  <link rel="stylesheet" href="css/program-details.css" />
+  <script src="js/program-details.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <div class="navbar">
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="cart-icon">
+        <a href="cart.html">
+          <span id="cart-count">0</span> Cart
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="program-details-container">
+    <div class="background">
+      <img src="backbone.jpg" alt="Background" class="background-image" />
+    </div>
+
+    <div class="content">
+      <h1 class="title">Workout Programs</h1>
+
+      <!-- Program Details Section -->
+      <div class="program-card">
+        <div class="card-top-bar">
+          <h2 class="program-title" id="program-title">Yoga For Beginners</h2>
+        </div>
+
+        <div class="workout-days">
+          <div class="day">
+            <h3 class="day-title">First Day</h3>
+            <p class="workout-type">Full Body + Core</p>
+            <p class="day-description">Do bodyweight moves like squats, pushups, lunges, and burpees. Add some core workouts: sit-ups, planks, crunches.</p>
+          </div>
+          <!-- Repeat similar day structure if needed -->
+        </div>
+
+        <div class="price-section">
+          <h2 class="price-heading">Buy Full 4 Week Workout Program</h2>
+          <div class="price">
+            <div class="price-option">
+              <p class="price-value">$120</p>
+              <p class="price-label">without diet plan</p>
+            </div>
+            <div class="price-option">
+              <p class="price-value">$220</p>
+              <p class="price-label">with diet plan</p>
+            </div>
+          </div>
+
+          <button class="add-to-cart-btn" onclick="addToCart('Yoga For Beginners', 120)">Add to Cart</button>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+</body>
+</html>

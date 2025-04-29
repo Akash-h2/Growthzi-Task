@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <!-- Header Section (Navbar) -->
+    <header class="navbar">
+        <nav class="navbar-container">
+          <div class="logo">
+            <a href="" class="logo-link">
+              <img src="images/logo.png" alt="FitSphere Logo" class="logo-image">
+            </a>
+            <span class="logo-text">FitSphere</span>
+          </div>
+      
+          <!-- Cart icon always visible -->
+          <div class="cart-icon mobile-cart">
+            <a href="cart.html" style="display: flex; align-items: center; gap: 0.5rem;">
+              <img src="https://cdn-icons-png.flaticon.com/512/4647/4647563.png" alt="Cart Icon" class="cart-image" />
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+      
+          <div class="mobile-menu">
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+          </div>
+      
+          <div class="navbar-links">
+            <ul class="navbar-menu">
+              <li><a href="" class="nav-link">Home</a></li>
+              <li><a href="#" class="nav-link">Search</a></li>
+              <li><a href="workout-programs.html" class="nav-link">Workout Programs</a></li>
+              <li><a href="#" class="nav-link">Trainers</a></li>
+              <li><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+      
+            <!-- Cart icon in desktop -->
+            <div class="cart-icon desktop-cart">
+              <a href="cart.html" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/4647/4647563.png" alt="Cart Icon" class="cart-image" />
+                <span id="cart-count">0</span>
+              </a>
+            </div>
+      
+            <div class="buttons">
+              <a href="#" class="btn join-btn">Join Now</a>
+              <a href="signup.html" class="btn signup-btn">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="mobile-menu-container">
+          <ul>
+            <li><a href="/" class="nav-link" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" class="nav-link" onclick="toggleMenu()">Search</a></li>
+            <li><a href="workout-programs.html" class="nav-link" onclick="toggleMenu()">Workout Programs</a></li>
+            <li><a href="#" class="nav-link" onclick="toggleMenu()">Trainers</a></li>
+            <li><a href="#" class="nav-link" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#" class="btn join-btn" onclick="toggleMenu()">Join Now</a></li>
+            <li><a href="signup.html" class="btn signup-btn" onclick="toggleMenu()">Sign Up</a></li>
+          </ul>
+        </div>
+      </header>
+      
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Background Image -->
+        <img src="images/hero.jpg" alt="Hero Background" class="hero-background">
+
+        <!-- Overlay Gradient -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Your Journey to Better<br>Health Starts Here.</h1>
+            <p>Discover tailored workout plans and expert guidance to help you achieve your fitness goals.</p>
+            <a href="/join">
+                <button>Get Started</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold">Why Choose Us?</h2>
+        </div>
+
+        <div class="why-choose-us-items">
+
+            <!-- First Item -->
+            <div class="why-item">
+                <div class="why-item-image">
+                    <img src="images/why-1.png" alt="Workout Programs" class="item-image">
+                </div>
+                <div class="why-item-text">
+                    <h3>Workout Programs</h3>
+                    <p>Get personalized fitness plans designed to suit your unique goals and fitness level.</p>
+                </div>
+            </div>
+
+            <!-- Second Item -->
+            <div class="why-item reverse">
+                <div class="why-item-image">
+                    <img src="images/why-2.png" alt="Expert Trainers" class="item-image">
+                </div>
+                <div class="why-item-text">
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified professionals provide expert guidance and support to help you achieve your fitness goals safely and effectively.</p>
+                </div>
+            </div>
+
+            <!-- Third Item -->
+            <div class="why-item">
+                <div class="why-item-image">
+                    <img src="images/why-3.png" alt="Flexible Plans" class="item-image">
+                </div>
+                <div class="why-item-text">
+                    <h3>Flexible Plans</h3>
+                    <p>Choose from affordable subscription options that cater to your needs. Whether you prefer monthly, yearly, or pay-as-you-go plans, we have a solution that fits your lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Find the Perfect Program Section -->
+    <section class="find-program-section">
+        <div class="text-center">
+          <h2>Find the Perfect Program for You</h2>
+          <p>From beginner to advanced, we’ve got you covered</p>
+        </div>
+      
+        <div class="program-grid"> <!-- Only ONE grid container -->
+          <div class="program-card">
+            <div class="program-card-image">
+              <img src="images/yoga.jpg" alt="Program 1" />
+            </div>
+            <div class="program-card-text">
+              <h3>Yoga & Flexibility</h3>
+            </div>
+          </div>
+      
+          <div class="program-card">
+            <div class="program-card-image">
+              <img src="images/expert-trainers.jpg" alt="Program 2" />
+            </div>
+            <div class="program-card-text">
+              <h3>Expert Trainers</h3>
+            </div>
+          </div>
+      
+          <div class="program-card">
+            <div class="program-card-image">
+              <img src="images/fat-loss.jpg" alt="Program 3" />
+            </div>
+            <div class="program-card-text">
+              <h3>Fat Loss</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+<!-- Our Experts Section -->
+<section class="our-experts-section">
+    <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">
+            Our Experts Are Here to Help
+        </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <!-- Expert 1 Card -->
+        <div class="expert-card bg-black p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <!-- Top: Image + Name + Designation -->
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 relative mr-4">
+                    <img src="images/expert1.jpg" alt="Expert 1" class="rounded-full object-cover w-full h-full" loading="lazy" />
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Michael T.</h3>
+                    <p class="text-gray-400 text-sm">Gym Trainer</p>
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <div class="border-t border-gray-600 my-4"></div>
+
+            <!-- Testimonial Text -->
+            <p class="text-gray-300">
+                Each trainer brings specialized expertise to help you succeed. From strength training and weight loss to yoga and endurance, our certified professionals provide personalized guidance tailored to your fitness goals.
+            </p>
+        </div>
+
+        <!-- Expert 2 Card -->
+        <div class="expert-card bg-black p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 relative mr-4">
+                    <img src="images/expert2.jpg" alt="Expert 2" class="rounded-full object-cover w-full h-full" loading="lazy" />
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Johnson</h3>
+                    <p class="text-gray-400 text-sm">Gym Trainer</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 my-4"></div>
+
+            <p class="text-gray-300">
+                Our trainers are certified experts in various fields, including strength training, weight management, yoga, and cardio. They are dedicated to helping you achieve your goals with personalized care and support.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer ">
+    <div class="container ">
+      
+      <!-- Left Section -->
+      <div class="footer-left flex flex-col items-center md:items-start gap-6">
+        <!-- Logo and Brand -->
+        <div class="logo flex flex-col items-center md:items-start gap-2">
+          <img src="images/logo.png" alt="FitSphere" class="h-12" />
+          <span class="text-2xl font-bold">FitSphere</span>
+        </div>
+  
+        <!-- Address -->
+        <p class="address text-sm text-center md:text-left">
+          123 Fitness Avenue, Wellness City,<br />
+          HealthState, 56789
+        </p>
+  
+        <!-- Social Icons -->
+        <div class="social-icons flex items-center gap-4 text-xl mt-2">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-black-transparent.png" alt="Instagram" class="icon" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/very-thin-linear-icon/facebook-152.png" alt="Facebook" class="icon" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/ios11/512/4D4D4D/twitterx--v2.png" alt="Twitter" class="icon" />
+          </a>
+        </div>
+      </div>
+  
+    
+      <div class="hidden md:block w-px bg-gray-500"></div>
+  
+      <!-- Useful Links Section -->
+      <div class="useful-links flex flex-col gap-3 text-center md:text-left">
+        <h3 class="font-semibold text-white mb-2">Useful Links</h3>
+        <a href="#" class="hover:text-orange-500 transition">Home</a>
+        <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-orange-500 transition">Terms of Service</a>
+        <a href="#" class="hover:text-orange-500 transition">FAQs</a>
+      </div>
+  
+      <!-- Contact Us Section -->
+      <div class="contact-us flex flex-col gap-3 text-center md:text-left">
+        <a href="">
+          <h3 class="font-semibold text-white mb-2">Contact Us</h3>
+        </a>
+        <div class="flex items-center justify-center md:justify-start gap-2">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713640.png?f=webp&w=256" alt="Email" class="icon" />
+          <a href="mailto:support@fitnesswebsite.com" class="hover:text-orange-500">
+            support@fitnesswebsite.com
+          </a>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <img src="https://www.svgrepo.com/show/309853/phone.svg" alt="Phone" class="icon" />
+            <a href="tel:+1800FITNOW" class="hover:text-orange-500" style="margin-left: 0.5rem;">
+              +1-800-FIT-NOW
+            </a>
+          </div>
+          
+      </div>
+    </div>
+  
+    <!-- Bottom Text -->
+    <div class="footer-bottom border-t border-gray-600 mt-10 pt-4 text-center text-xs">
+      Copyright © 2024 All rights reserved | This template is made by ****
+    </div>
+  </footer>
+  
+
+
+    <script src="js/script.js"></script>
+   
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #868686;
+  padding: 20px;
+  z-index: 10;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Main Content */
+.program-details-container {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Program Card */
+.program-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.card-top-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.program-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Workout Days */
+.workout-days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.day {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.day-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.workout-type {
+  color: #FFA500;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.day-description {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Price Section */
+.price-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.price-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.price-option {
+  text-align: center;
+}
+
+.price-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+  background-color: #FFA500;
+  color: white;
+  padding: 12px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+  background-color: #ff7f00;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+      padding: 15px;
+  }
+
+  .program-card {
+      padding: 20px;
+  }
+
+  .program-title {
+      font-size: 24px;
+  }
+
+  .title {
+      font-size: 28px;
+  }
+
+  .workout-days {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .price-section {
+      margin-top: 20px;
+  }
+
+  .price-value {
+      font-size: 20px;
+  }
+
+  .price-label {
+      font-size: 12px;
+  }
+
+  .add-to-cart-btn,
+  .buy-now-btn {
+      font-size: 16px;
+      padding: 10px 30px;
+  }
+
+  .day-title {
+      font-size: 20px;
+  }
+
+  .workout-type {
+      font-size: 16px;
+  }
+
+  .day-description {
+      font-size: 12px;
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .navbar {
+      padding: 10px;
+  }
+
+  .program-card {
+      padding: 15px;
+  }
+
+  .program-title {
+      font-size: 20px;
+  }
+
+  .title {
+      font-size: 22px;
+  }
+
+  .workout-days {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+
+  .price-section {
+      margin-top: 10px;
+  }
+
+  .price-value {
+      font-size: 18px;
+  }
+
+  .price-label {
+      font-size: 12px;
+  }
+
+  .add-to-cart-btn,
+  .buy-now-btn {
+      font-size: 14px;
+      padding: 8px 25px;
+  }
+
+  .day-title {
+      font-size: 18px;
+  }
+
+  .workout-type {
+      font-size: 14px;
+  }
+
+  .day-description {
+      font-size: 10px;
+  }
+}
