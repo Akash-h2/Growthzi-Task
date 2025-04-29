@@ -9,8 +9,8 @@ This is a frontend assignment project based on a Figma design for a Gym/Fitness 
 
 ## 🔗 Live Demos
 
-- 🚀 [Next.js Version (Vercel)(https://fitsphere-gamma.vercel.app/))
-- 🌐 [HTML/CSS Version (Vercel)(https://fitsphere-html.vercel.app/))
+- 🚀 [Next.js Version (https://fitsphere-gamma.vercel.app/)
+- 🌐 [HTML/CSS Version (https://fitsphere-html.vercel.app/)
 
 ---
 
